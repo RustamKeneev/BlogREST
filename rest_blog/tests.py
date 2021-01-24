@@ -16,3 +16,5 @@ class PostTest(SimpleTestCase):
         self.assertEquals(expected_object_name, 'testing')
 
 
+
+
