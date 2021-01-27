@@ -21,5 +21,9 @@ from rest_blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/posts/', views.get_all_posts),
-    path('api/posts/<int:id>/', views.get_post)
+    path('api/posts/<int:id>/', views.get_post),
+    path('posts/api/',views.PostApiViews.as_view()),
+    path('posts/api/<int:id>',views.PostApiViews.as_view()),
+    path('comments/api/',views.CommentApiViews.as_view()),
+    path('comments/api/<int:id>',views.CommentApiViews.as_view()),
 ]
